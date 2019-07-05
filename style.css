@@ -1,12 +1,27 @@
-* {
-  margin: 0;
-  padding: 0; 
+
+html {
+  height: 100%;
+  box-sizing: border-box;
 }
 
-.header {
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Mirza', cursive; 
   width: 100%;
-  height: 90px;
-  background-color:  #1f0c63;
+  height: 100%;
+}
+
+
+.header {
+  color:#fff;
+  width: 100%;
+  height: 100px;
+  background-color:  #171948;
   display: flex;
   align-items: center;
   justify-content: space-between; 
@@ -18,8 +33,31 @@
 }
 
 h1 {
-  color: white;
-  margin-right: 50px;
+  font-size: 50px;
+  margin-left: 70px;
+}
+.nav-bar {
+  width: 115px;
+  height: 63px;
+  margin: 0;
+  padding-top: 22px;
+  background-color: #171948;
+}
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-bar a:hover {
+  color: rgb(90, 200, 228);
+  border-bottom: 1px solid rgb(90, 200, 228);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .search {
@@ -28,8 +66,10 @@ h1 {
   display: flex;
   align-items: center;
   transition: all .3s;
+  width: 50%;
   height: 75px;
-  margin-top: 2%; 
+  margin-top: 12%;
+  margin-left: 25%; 
 }
   .search:focus-within {
     transform: translateY(-2px);
@@ -59,6 +99,8 @@ h1 {
   color: #fff;
   cursor: pointer;
   display: flex;
+  margin-right: 20px;
+  margin-left: 15px;
   transition: all .2s;
  }
   .btn:hover, .btn-small:hover {
@@ -75,14 +117,35 @@ h1 {
   li {
     width: 308px;
     height: 200px;
-    background-color: rgba(61, 61, 209, 0.37);
+   text-align: center;
+    background-color: rgba(116, 136, 163, 0.37);
     float: left;
     margin: 12px;
-    margin-top: 40px;
+    margin-top: 60px;
     list-style-type: none;
   }
- 
 
+  li h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 308px;
+    text-align: center;
+    text-overflow: ellipsis; /* To make text ends with ...*/
+    direction: rtl;  /* To make ellipsis from left for Arabic text */
+    margin-top: 5px;
+  }
+
+footer {
+  background: #171948;
+  color: #fff;
+  padding-top: 7px ;
+  height: 35px;
+  width: 100%;
+  float: left;
+  margin-top: 56px;
+  text-align: center;
+}
+  
 
 
 
