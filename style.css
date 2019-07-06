@@ -16,7 +16,7 @@ body {
   height: 100%;
 }
 
-
+/*-- Header --*/
 .header {
   color:#fff;
   width: 100%;
@@ -36,6 +36,15 @@ h1 {
   font-size: 40px;
   margin-left: 120px;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/*-- Navbar --*/
 nav {
   margin-inline-end: 20px;
 }
@@ -62,13 +71,7 @@ nav li:first-child {
   border-bottom: 1px solid rgb(90, 200, 228);
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-}
-
+/*-- Search Part --*/
 .search {
   background-color: rgba(158, 182, 197, 0.61);
   border-radius: 10rem;
@@ -80,25 +83,29 @@ nav li:first-child {
   margin-top: 12%;
   margin-left: 25%; 
 }
-  .search:focus-within {
-    transform: translateY(-2px);
-    box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.08); }
-  
-  .search__field {
-    background: #b7bac782;
-    color: inherit;
-    font-size: 1.7rem;
-    width: 70%;
-    margin-left: 10%;
-    text-align: right;
-    padding-right: 20px;
-   }
+.search:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.08);
+}
 
-    .search__field:focus {
-      outline: none; }
-    .search__field::placeholder {
-      color: #DAD0CC; 
-    }
+.search__field {
+  background: #b7bac782;
+  color: inherit;
+  font-size: 1.7rem;
+  width: 70%;
+  margin-left: 10%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.search__field:focus {
+  outline: none; 
+}
+
+.search__field::placeholder {
+  color: #DAD0CC; 
+}
+
 .btn{
   width: 150px;
   height: 39px;
@@ -111,65 +118,68 @@ nav li:first-child {
   margin-right: 20px;
   margin-left: 15px;
   transition: all .2s;
- }
-  .btn:hover, .btn-small:hover {
-    transform: scale(1.05); 
-  }
-  .btn:focus, .btn-small:focus {
-    outline: none;
-  }
-  .btn > *:first-child {
-    margin-left: 40px;
-    font-size: 25px; 
-  }
+}
+.btn:hover, .btn-small:hover {
+  transform: scale(1.05); 
+}
 
-  li {
-    width: 308px;
-    height: 200px;
-   text-align: center;
-    background-color: rgba(116, 136, 163, 0.37);
-    float: left;
-    margin: 12px;
-    margin-top: 60px;
-    list-style-type: none;
-  }
+.btn:focus, .btn-small:focus {
+  outline: none;
+}
 
-  li h3 {
-    overflow: hidden;
-    white-space: nowrap;
-    max-width: 308px;
-    text-align: center;
-    text-overflow: ellipsis; /* To make text ends with ...*/
-    direction: rtl;  /* To make ellipsis from left for Arabic text */
-    margin-top: 5px;
-  }
+.btn > *:first-child {
+  margin-left: 40px;
+  font-size: 25px; 
+}
 
-  .layer {
-    background-color: #00000091;
-    z-index: 1;
-    width: 308px;
-    height: 200px;
-    position: absolute;
-    text-align: center;
-    
-  }
+/*-- View PDFs Part --*/
+li {
+  width: 308px;
+  height: 200px;
+ text-align: center;
+  background-color: rgba(116, 136, 163, 0.37);
+  float: left;
+  margin: 12px;
+  margin-top: 60px;
+  list-style-type: none;
+}
 
-  .layer:hover {
-    cursor: pointer;
-    visibility: hidden;
-    transition: all .5s;
-  }
+li h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 308px;
+  text-align: center;
+  text-overflow: ellipsis; /* To make text ends with ...*/
+  direction: rtl;  /* To make ellipsis from left for Arabic text */
+  margin-top: 5px;
+}
 
-  .layer p {
-    color: #fff;
-    font-size: 50px;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
+.layer {
+  background-color: #00000091;
+  z-index: 1;
+  width: 308px;
+  height: 200px;
+  position: absolute;
+  text-align: center;
   
+}
 
+.layer:hover {
+  cursor: pointer;
+  visibility: hidden;
+  transition: all .5s;
+}
+
+.layer p {
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/*-- Footer --*/
 footer {
   background: #171948;
   color: #fff;
