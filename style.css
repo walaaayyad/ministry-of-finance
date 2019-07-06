@@ -34,14 +34,18 @@ body {
 
 h1 {
   font-size: 50px;
-  margin-left: 70px;
+  margin-left: 120px;
+}
+nav {
+  margin-inline-end: 20px;
 }
 .nav-bar {
-  width: 115px;
-  height: 63px;
+  width: 106px;
+  height: 35px;
   margin: 0;
   padding-top: 22px;
   background-color: #171948;
+  text-align: center;
 }
 .nav-bar a {
   color: #fff;
@@ -58,6 +62,7 @@ h1 {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 
 .search {
@@ -134,6 +139,32 @@ h1 {
     direction: rtl;  /* To make ellipsis from left for Arabic text */
     margin-top: 5px;
   }
+
+  .layer {
+    background-color: #00000091;
+    z-index: 1;
+    width: 308px;
+    height: 200px;
+    position: absolute;
+    text-align: center;
+    
+  }
+
+  .layer:hover {
+    cursor: pointer;
+    visibility: hidden;
+    transition: all .5s;
+  }
+
+  .layer p {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
 
 footer {
   background: #171948;
