@@ -4,7 +4,6 @@ html {
   box-sizing: border-box;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,7 @@ body {
   height: 100%;
 }
 
-
+/*--  header --*/
 .header {
   color:#fff;
   width: 100%;
@@ -36,9 +35,12 @@ h1 {
   font-size: 50px;
   margin-left: 120px;
 }
+
+/*-- Navbar --*/
 nav {
   margin-inline-end: 20px;
 }
+
 .nav-bar {
   width: 106px;
   height: 35px;
@@ -47,10 +49,15 @@ nav {
   background-color: #171948;
   text-align: center;
 }
+
 .nav-bar a {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
+}
+
+nav li:first-child {
+  text-align: right;
 }
 
 .nav-bar a:hover {
@@ -58,6 +65,7 @@ nav {
   border-bottom: 1px solid rgb(90, 200, 228);
 }
 
+/*-- Make Header Stick on Top --*/
 .sticky {
   position: fixed;
   top: 0;
@@ -65,6 +73,7 @@ nav {
   z-index: 2;
 }
 
+/*-- Search Part --*/
 .search {
   background-color: rgba(158, 182, 197, 0.61);
   border-radius: 10rem;
@@ -76,25 +85,30 @@ nav {
   margin-top: 12%;
   margin-left: 25%; 
 }
-  .search:focus-within {
-    transform: translateY(-2px);
-    box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.08); }
-  
-  .search__field {
-    background: #b7bac782;
-    color: inherit;
-    font-size: 1.7rem;
-    width: 70%;
-    margin-left: 10%;
-    text-align: right;
-    padding-right: 20px;
-   }
 
-    .search__field:focus {
-      outline: none; }
-    .search__field::placeholder {
-      color: #DAD0CC; 
-    }
+.search:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.08);
+ }
+
+.search__field {
+  background: #b7bac782;
+  color: inherit;
+  font-size: 1.7rem;
+  width: 70%;
+  margin-left: 10%;
+  text-align: right;
+  padding-right: 20px;
+ }
+
+.search__field:focus {
+  outline: none; }
+
+.search__field::placeholder {
+  color: #DAD0CC; 
+}
+
+/*-- Search Button --*/
 .btn{
   width: 150px;
   height: 39px;
@@ -108,64 +122,69 @@ nav {
   margin-left: 15px;
   transition: all .2s;
  }
-  .btn:hover, .btn-small:hover {
-    transform: scale(1.05); 
-  }
-  .btn:focus, .btn-small:focus {
-    outline: none;
-  }
-  .btn > *:first-child {
-    margin-left: 40px;
-    font-size: 25px; 
-  }
 
-  li {
-    width: 308px;
-    height: 200px;
-   text-align: center;
-    background-color: rgba(116, 136, 163, 0.37);
-    float: left;
-    margin: 12px;
-    margin-top: 60px;
-    list-style-type: none;
-  }
+.btn:hover, .btn-small:hover {
+  transform: scale(1.05); 
+}
 
-  li h3 {
-    overflow: hidden;
-    white-space: nowrap;
-    max-width: 308px;
-    text-align: center;
-    text-overflow: ellipsis; /* To make text ends with ...*/
-    direction: rtl;  /* To make ellipsis from left for Arabic text */
-    margin-top: 5px;
-  }
+.btn:focus, .btn-small:focus {
+  outline: none;
+}
 
-  .layer {
-    background-color: #00000091;
-    z-index: 1;
-    width: 308px;
-    height: 200px;
-    position: absolute;
-    text-align: center;
-    
-  }
+.btn > *:first-child {
+  margin-left: 40px;
+  font-size: 25px; 
+}
 
-  .layer:hover {
-    cursor: pointer;
-    visibility: hidden;
-    transition: all .5s;
-  }
+/*-- PDFs Part--*/
+li {
+  width: 308px;
+  height: 200px;
+ text-align: center;
+  background-color: rgba(116, 136, 163, 0.37);
+  float: left;
+  margin: 12px;
+  margin-top: 60px;
+  list-style-type: none;
+}
 
-  .layer p {
-    color: #fff;
-    font-size: 50px;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
+li h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 308px;
+  text-align: center;
+  text-overflow: ellipsis; /* To make text ends with ...*/
+  direction: rtl;  /* To make ellipsis from left for Arabic text */
+  margin-top: 5px;
+}
+
+/*-- PDFs Shadow Layer --*/
+.layer {
+  background-color: #00000091;
+  z-index: 1;
+  width: 308px;
+  height: 200px;
+  position: absolute;
+  text-align: center;
   
+}
 
+.layer:hover {
+  cursor: pointer;
+  visibility: hidden;
+  transition: all .5s;
+}
+
+.layer p {
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+  
+/*-- Footer Part --*/
 footer {
   background: #171948;
   color: #fff;
