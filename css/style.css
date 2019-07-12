@@ -1,0 +1,219 @@
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Mirza', cursive; 
+  width: 100%;
+  height: 100%;
+}
+
+/*-- Header --*/
+.header {
+  color:#fff;
+  width: 100%;
+  height: 100px;
+  background-color:  #171948;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+.header__logo {
+  margin-left: 4rem;
+  height: 4.5rem;
+  display: block; 
+}
+
+h1 {
+  font-size: 40px;
+  margin-left: 120px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/*-- Navbar --*/
+nav {
+  margin-inline-end: 20px;
+}
+.nav-bar {
+  width: 106px;
+  height: 35px;
+  margin: 0;
+  padding-top: 22px;
+  background-color: #171948;
+  text-align: center;
+}
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav li:first-child {
+  text-align: right;
+}
+
+.nav-bar a:hover {
+  color: rgb(90, 200, 228);
+  border-bottom: 1px solid rgb(90, 200, 228);
+}
+
+/*-- Add Part --*/
+.add{
+  transition: all 1.7s;
+  margin-top: 12%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-left: 75%; 
+
+}
+
+/*-- Search Part --*/
+.search {
+  background-color: rgba(158, 182, 197, 0.61);
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  transition: all 1.9s;
+  width: 50%;
+  height: 4em;
+  /* margin-top: 12%; */
+  margin-left: 25%; 
+}
+.search:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.08);
+}
+
+.search__field {
+  background: #b7bac782;
+  color: #fff;
+  font-size: 1.7rem;
+  width: 70%;
+  margin-left: 10%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.search__field:focus {
+  outline: none; 
+}
+
+.search__field::placeholder {
+  color: rgb(255, 255, 255); 
+}
+
+.btn{
+  width: 150px;
+  height: 39px;
+  background-image: linear-gradient(to right bottom, rgb(156, 161, 224), #150e6d);
+  border-radius: 10rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  margin-right: 20px;
+  margin-left: 15px;
+  transition: all .2s;
+}
+.btn:hover, .btn-small:hover {
+  transform: scale(1.05); 
+}
+
+.btn:focus, .btn-small:focus {
+  outline: none;
+}
+
+.btn > *:first-child {
+  margin-left: 40px;
+  font-size: 25px; 
+}
+
+/*-- View PDFs Part --*/
+li {
+  width: 308px;
+  height: 200px;
+ text-align: center;
+  background-color: rgba(116, 136, 163, 0.37);
+  float: left;
+  margin: 12px;
+  margin-top: 60px;
+  list-style-type: none;
+}
+
+li h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 308px;
+  text-align: center;
+  text-overflow: ellipsis; /* To make text ends with ...*/
+  direction: rtl;  /* To make ellipsis from left for Arabic text */
+  margin-top: 5px;
+}
+
+.layer {
+  background-color: #00000091;
+  z-index: 1;
+  width: 308px;
+  height: 200px;
+  position: absolute;
+  text-align: center;
+  
+}
+
+.layer:hover {
+  cursor: pointer;
+  visibility: hidden;
+  transition: all 0.1s;
+}
+
+.layer p {
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/*-- Footer --*/
+footer {
+  background: #171948;
+  color: #fff;
+  padding-top: 7px ;
+  height: 35px;
+  width: 100%;
+  float: left;
+  margin-top: 56px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
